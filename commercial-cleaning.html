@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJD1ZGHM4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BJD1ZGHM4K');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Cleaning Sydney | Professional Office Cleaning | AAAPlus Cleaning</title>
+    <meta name="description" content="Expert commercial cleaning services in Sydney. Specializing in office cleaning, retail cleaning, and commercial spaces. Professional, reliable, and fully insured. Get a quote today!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1497366672149-e5e4b4d34eb3?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .feature-hover {
+            background-color: white;
+            transition: all 0.3s ease-in-out;
+        }
+        .feature-hover:hover {
+            background-color: white;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px) scale(1.02);
+        }
+        .cta-button {
+            background: linear-gradient(to right, #4A90E2, #1C3D6E);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .premium-parallax {
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                45deg,
+                rgba(0,0,0,0.9) 0%,
+                rgba(0,0,0,0.7) 50%,
+                rgba(0,0,0,0.4) 100%
+            );
+            z-index: 1;
+        }
+        .content-wrapper {
+            position: relative;
+            z-index: 2;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4A90E2',
+                        secondary: '#1C3D6E',
+                        accent: '#B0C5DB',
+                        light: '#F3F4F6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<header x-data="{ isOpen: false }" class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all duration-300">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <!-- Logo Section - Enhanced with hover effect -->
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="#" class="flex items-center transform transition-transform duration-300 hover:scale-105">
+                    <img class="h-16 w-auto sm:h-20" src="https://i.postimg.cc/ZnWYwYSJ/Clean-Nest-2-removebg-preview.png" alt="AAAPlus Cleaning Logo">
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button - Refined -->
+            <div class="-mr-2 -my-2 md:hidden">
+                <button @click="isOpen = !isOpen" 
+                        class="inline-flex items-center justify-center p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors duration-300 focus:outline-none">
+                    <span class="sr-only">Open menu</span>
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              x-show="!isOpen" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              x-show="isOpen" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation - Enhanced -->
+            <nav class="hidden md:flex space-x-1">
+                <a href="#services" class="px-4 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-full hover:bg-primary/10 transition-all duration-300">Services</a>
+                <a href="#about" class="px-4 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-full hover:bg-primary/10 transition-all duration-300">About Us</a>
+                <a href="#process" class="px-4 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-full hover:bg-primary/10 transition-all duration-300">Our Process</a>
+                <a href="#testimonials" class="px-4 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-full hover:bg-primary/10 transition-all duration-300">Testimonials</a>
+            </nav>
+
+            <!-- CTA Button - Enhanced -->
+            <div class="hidden md:flex items-center justify-end">
+                <a href="#contact" 
+                   class="ml-8 px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-full shadow-lg hover:shadow-primary/50 transform hover:scale-105 transition-all duration-300 group">
+                    <span class="flex items-center">
+                        <span>Get a Free Quote</span>
+                        <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu - Refined -->
+    <div x-show="isOpen" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-4"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 translate-y-0"
+         x-transition:leave-end="opacity-0 -translate-y-4"
+         class="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl shadow-xl rounded-b-3xl overflow-hidden"
+         @click.away="isOpen = false">
+        <div class="p-6">
+            <nav class="grid gap-y-4">
+                <a href="#" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Home</span>
+                </a>
+                <a href="#services" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Services</span>
+                </a>
+                <a href="#about" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">About Us</span>
+                </a>
+                <a href="#process" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Our Process</span>
+                </a>
+                <a href="#testimonials" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Testimonials</span>
+                </a>
+                <a href="#contact" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Contact</span>
+                </a>
+            </nav>
+
+            <div class="mt-8 p-4">
+                <a href="#contact" 
+                   class="block w-full text-center px-6 py-4 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-xl shadow-lg hover:shadow-primary/50 transform hover:scale-[1.02] transition-all duration-300">
+                    Get Your Free Quote
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Spacer for fixed header -->
+<div class="h-[88px]"></div>
+
+<style>
+/* Custom scroll behavior for mobile menu */
+.mobile-menu-scroll {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.mobile-menu-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header scroll effect */
+@media (min-width: 768px) {
+    .header-scroll {
+        transform: translateY(-100%);
+    }
+
+    .header-scroll.show {
+        transform: translateY(0);
+    }
+}
+</style>
+
+<script>
+// Header scroll behavior
+let lastScroll = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll <= 0) {
+        header.classList.remove('header-scroll');
+        return;
+    }
+    
+    if (currentScroll > lastScroll && !header.classList.contains('header-scroll')) {
+        // Scroll down
+        header.classList.add('header-scroll');
+    } else if (currentScroll < lastScroll && header.classList.contains('header-scroll')) {
+        // Scroll up
+        header.classList.remove('header-scroll');
+    }
+    
+    lastScroll = currentScroll;
+});
+</script>
+    <section class="relative hero-bg min-h-screen flex items-center">
+        <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-left max-w-3xl">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4 text-shadow">
+                    Premier Commercial Cleaning <span class="text-primary"><br>in Sydney</span>
+                </h1>
+                <p class="mt-6 text-xl sm:text-2xl text-white max-w-3xl text-shadow">
+                    Transform your business space with Sydney's most trusted commercial cleaning service. Professional, reliable, and fully insured cleaning solutions for all commercial properties.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="cta-button rounded-full px-8 py-4 text-lg font-semibold text-white shadow-lg text-center bg-primary hover:bg-primary-dark transition duration-300">
+                        Get Your Business Quote
+                    </a>
+                    <a href="#services" class="rounded-full bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg px-8 py-4 text-lg font-medium text-white hover:bg-opacity-30 transition duration-300 text-center border border-white">
+                        Explore Commercial Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="prose max-w-none text-lg">
+                    <p class="mb-6">
+                        AAAPlus Cleaning is your premier choice for commercial cleaning services in Sydney. We understand that a clean workplace is crucial for productivity, employee well-being, and maintaining a professional image. Our experienced team delivers exceptional cleaning solutions tailored to your business needs.
+                    </p>
+                    <p class="mb-6">
+                        From office complexes to retail spaces, warehouses to industrial facilities, we provide comprehensive commercial cleaning services that meet the highest standards of cleanliness and hygiene. Our professional cleaners are fully trained, insured, and committed to delivering consistent, high-quality results.
+                    </p>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Professional Commercial Cleaning" class="rounded-lg shadow-2xl">
+<div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-lg">
+                        <p class="text-2xl font-bold">100%</p>
+                        <p class="text-sm">Business Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="py-24 bg-gradient-to-br from-gray-50 to-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-primary font-semibold tracking-wider uppercase text-sm">Knowledge Base</span>
+            <h2 class="text-4xl font-bold text-secondary sm:text-5xl font-playfair mt-4">
+                Frequently Asked Questions About Commercial Cleaning in Baulkham Hills
+            </h2>
+            <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+                Everything you need to know about our professional commercial cleaning services
+            </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-6">
+            <!-- FAQ Item 1 -->
+            <div x-data="{ open: false }" class="transform transition-all duration-300">
+                <button @click="open = !open" 
+                        class="flex justify-between items-center w-full bg-white p-8 rounded-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.13)] transition-all duration-300 ease-in-out">
+                    <h3 class="text-xl font-bold text-secondary pr-8">What is commercial cleaning and why is it essential for businesses in Baulkham Hills?</h3>
+                    <div class="flex-shrink-0 ml-4">
+                        <div class="bg-primary/10 rounded-full p-2">
+                            <svg class="w-6 h-6 text-primary transform transition-transform duration-200" 
+                                 :class="{'rotate-180': open}" 
+                                 fill="none" 
+                                 stroke="currentColor" 
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <div x-show="open"
+                     x-collapse
+                     x-cloak
+                     class="relative">
+                    <div class="bg-white px-8 pb-8 rounded-b-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)]">
+                        <div class="prose max-w-none pt-6 text-gray-600">
+                            <p>Commercial cleaning in Baulkham Hills refers to professional cleaning services tailored for businesses and commercial properties. It's essential for maintaining a hygienic work environment, enhancing productivity, and creating a positive impression on clients. AAAPLUS Cleaning offers top-notch commercial cleaning services in Baulkham Hills, ensuring your workspace is spotless and sanitised.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div x-data="{ open: false }" class="transform transition-all duration-300">
+                <button @click="open = !open" 
+                        class="flex justify-between items-center w-full bg-white p-8 rounded-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.13)] transition-all duration-300 ease-in-out">
+                    <h3 class="text-xl font-bold text-secondary pr-8">What types of commercial cleaning services does AAAPLUS Cleaning provide in Baulkham Hills?</h3>
+                    <div class="flex-shrink-0 ml-4">
+                        <div class="bg-primary/10 rounded-full p-2">
+                            <svg class="w-6 h-6 text-primary transform transition-transform duration-200" 
+                                 :class="{'rotate-180': open}" 
+                                 fill="none" 
+                                 stroke="currentColor" 
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <div x-show="open"
+                     x-collapse
+                     x-cloak
+                     class="relative">
+                    <div class="bg-white px-8 pb-8 rounded-b-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)]">
+                        <div class="prose max-w-none pt-6 text-gray-600">
+                            <p>AAAPLUS Cleaning offers a comprehensive range of commercial cleaning services in Baulkham Hills, including:</p>
+                            <ul class="mt-4 space-y-3">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span>Office cleaning in Baulkham Hills</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span>Retail space cleaning</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span>Medical facility sanitisation</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span>Educational institution cleaning</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span>Industrial site cleaning</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span>Warehouse cleaning services</span>
+                                </li>
+                            </ul>
+                            <p class="mt-4">Our Baulkham Hills commercial cleaners are equipped to handle all your business cleaning needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div x-data="{ open: false }" class="transform transition-all duration-300">
+                <button @click="open = !open" 
+                        class="flex justify-between items-center w-full bg-white p-8 rounded-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.13)] transition-all duration-300 ease-in-out">
+                    <h3 class="text-xl font-bold text-secondary pr-8">How often should I schedule commercial cleaning services in Baulkham Hills?</h3>
+                    <div class="flex-shrink-0 ml-4">
+                        <div class="bg-primary/10 rounded-full p-2">
+                            <svg class="w-6 h-6 text-primary transform transition-transform duration-200" 
+                                 :class="{'rotate-180': open}" 
+                                 fill="none" 
+                                 stroke="currentColor" 
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <div x-show="open"
+                     x-collapse
+                     x-cloak
+                     class="relative">
+                    <div class="bg-white px-8 pb-8 rounded-b-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)]">
+                        <div class="prose max-w-none pt-6 text-gray-600">
+                            <p>The frequency of commercial cleaning in Baulkham Hills depends on your specific business needs. High-traffic areas may require daily commercial cleaning, while less frequented spaces might need weekly or fortnightly cleaning. AAAPLUS Cleaning offers flexible commercial cleaning schedules in Baulkham Hills to suit your business requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div x-data="{ open: false }" class="transform transition-all duration-300">
+                <button @click="open = !open" 
+                        class="flex justify-between items-center w-full bg-white p-8 rounded-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.13)] transition-all duration-300 ease-in-out">
+                    <h3 class="text-xl font-bold text-secondary pr-8">What areas around Baulkham Hills do you service for commercial cleaning?</h3>
+                    <div class="flex-shrink-0 ml-4">
+                        <div class="bg-primary/10 rounded-full p-2">
+                            <svg class="w-6 h-6 text-primary transform transition-transform duration-200" 
+                                 :class="{'rotate-180': open}" 
+                                 fill="none" 
+                                 stroke="currentColor" 
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <div x-show="open"
+                     x-collapse
+                     x-cloak
+                     class="relative">
+                    <div class="bg-white px-8 pb-8 rounded-b-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)]">
+                        <div class="prose max-w-none pt-6 text-gray-600">
+                            <p>AAAPLUS Cleaning provides commercial cleaning services in Baulkham Hills and surrounding areas, including:</p>
+                            <div class="grid grid-cols-2 gap-4 mt-6">
+                                <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                    <span class="font-semibold text-secondary">Castle Hill</span>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                    <span class="font-semibold text-secondary">Kellyville</span>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                    <span class="font-semibold text-secondary">Bella Vista</span>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                    <span class="font-semibold text-secondary">Norwest</span>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg text-center">
+                                    <span class="font-semibold text-secondary">Winston Hills</span>
+                                </div>
+                            </div>
+                            <p class="mt-6">Our team of expert cleaners is ready to service your business, no matter where you are in the Baulkham Hills region.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div x-data="{ open: false }" class="transform transition-all duration-300">
+                <button @click="open = !open" 
+                        class="flex justify-between items-center w-full bg-white p-8 rounded-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.13)] transition-all duration-300 ease-in-out">
+                    <h3 class="text-xl font-bold text-secondary pr-8">How can I book commercial cleaning services with AAAPLUS Cleaning in Baulkham Hills?</h3>
+                    <div class="flex-shrink-0 ml-4">
+                        <div class="bg-primary/10 rounded-full p-2">
+                            <svg class="w-6 h-6 text-primary transform transition-transform duration-200" 
+                                 :class="{'rotate-180': open}" 
+                                 fill="none" 
+                                 stroke="currentColor" 
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <div x-show="open"
+                     x-collapse
+                     x-cloak
+                     class="relative">
+                    <div class="bg-white px-8 pb-8 rounded-b-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)]">
+<div class="prose max-w-none pt-6 text-gray-600">
+                            <p>Booking commercial cleaning services in Baulkham Hills with AAAPLUS Cleaning is easy. Simply call our Baulkham Hills office or visit our website to request a free quote. Our friendly team will discuss your commercial cleaning needs and provide a tailored solution for your Baulkham Hills business.</p>
+                            <div class="mt-6 bg-primary/5 p-6 rounded-lg">
+                                <p class="font-semibold text-primary">Contact us today to get started with your customized commercial cleaning plan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+[x-cloak] {
+    display: none !important;
+}
+
+.prose ul > li {
+    padding-left: 0;
+    margin-left: 0;
+}
+</style>
+<section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-secondary sm:text-5xl font-playfair mb-16 text-center">Commercial Cleaning Services in Sydney</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-secondary mb-4">Office Cleaning</h3>
+                    <p class="text-gray-600">Professional cleaning solutions for corporate spaces and office buildings</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-secondary mb-4">Retail Cleaning</h3>
+                    <p class="text-gray-600">Specialized cleaning services for retail stores and shopping centers</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-secondary mb-4">Industrial Cleaning</h3>
+                    <p class="text-gray-600">Heavy-duty cleaning solutions for warehouses and industrial facilities</p>
+                </div>
+            </div>
+
+            <div class="space-y-12">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-2xl font-bold text-primary mb-4">Regular Commercial Cleaning</h4>
+                    <p class="text-gray-600 mb-6">
+                        Our comprehensive regular cleaning service ensures your commercial space maintains a consistently high standard of cleanliness. We handle all aspects of commercial cleaning, from daily maintenance to specialized services, using eco-friendly products and industry-leading techniques.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-2xl font-bold text-primary mb-4">Deep Commercial Cleaning</h4>
+                    <p class="text-gray-600 mb-6">
+                        For those times when your commercial property needs extra attention, our deep cleaning service covers all standard cleaning tasks plus detailed attention to often-overlooked areas. This includes carpet cleaning, window cleaning, and intensive sanitization of all surfaces.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-2xl font-bold text-primary mb-4">Specialized Commercial Services</h4>
+                    <p class="text-gray-600 mb-6">
+                        Our specialized commercial cleaning services cater to unique business requirements. From medical facility sanitization to industrial equipment cleaning, we provide tailored solutions that meet industry-specific standards and compliance requirements.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-primary/5 p-8 rounded-xl">
+                <p class="text-gray-700 leading-relaxed">
+                    At AAAPlus Cleaning, we understand that every business has unique cleaning requirements. Our team of experienced commercial cleaners is dedicated to maintaining the highest standards of cleanliness and hygiene in your business space. We serve businesses throughout Sydney, providing reliable, professional, and comprehensive commercial cleaning solutions. Contact us today for a customized quote tailored to your business needs!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="premium-parallax" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80');">
+        <div class="gradient-overlay"></div>
+        
+        <div class="content-wrapper min-h-screen flex items-center py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-6xl mx-auto glass-card p-16 rounded-[3rem] animated-border">
+                    <div class="text-center mb-16">
+                        <span class="inline-block text-primary font-light tracking-[0.2em] uppercase text-sm mb-4">Premium Commercial Cleaning</span>
+                        <h2 class="text-5xl md:text-6xl font-bold text-white font-playfair mb-8 leading-tight">
+                            Transform Your Business Space<br/>With Professional Cleaning
+                        </h2>
+                        <div class="w-24 h-1 bg-gradient-to-r from-primary via-white to-primary mx-auto mb-8"></div>
+                        <p class="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+                            Sydney's most trusted commercial cleaning service. Where excellence meets professionalism.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                        <div class="bg-white/10 p-8 rounded-2xl hover-lift backdrop-blur-lg">
+                            <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white text-center mb-4">Professional Service</h3>
+                            <p class="text-white/80 text-center">Expert commercial cleaners delivering exceptional results</p>
+                        </div>
+
+                        <div class="bg-white/10 p-8 rounded-2xl hover-lift backdrop-blur-lg">
+                            <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white text-center mb-4">Quality Guaranteed</h3>
+                            <p class="text-white/80 text-center">Consistent, reliable commercial cleaning services</p>
+                        </div>
+
+                        <div class="bg-white/10 p-8 rounded-2xl hover-lift backdrop-blur-lg">
+                            <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white text-center mb-4">Flexible Solutions</h3>
+                            <p class="text-white/80 text-center">Customized cleaning plans for your business needs</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="inline-flex flex-col items-center">
+                            <a href="tel:+61405509438" class="group mb-4 bg-gradient-to-r from-primary to-secondary p-[2px] rounded-full hover:opacity-90 transition-all duration-300 hover:scale-105 transform">
+                                <div class="px-12 py-5 bg-gradient-to-r from-primary to-secondary rounded-full">
+                                    <span class="text-2xl font-bold text-white flex items-center gap-3">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                        (61) 405 509 438
+                                    </span>
+                                </div>
+                            </a>
+                            <span class="text-xl font-light tracking-wide text-white/90">GET YOUR FREE QUOTE TODAY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="relative bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900">
+    <!-- Top Border Line with Gradient -->
+    <div class="h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent"></div>
+    
+    <!-- Main Footer Content -->
+    <div class="container mx-auto px-4 py-12">
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 items-start">
+            <!-- Logo & Contact Column -->
+            <div class="space-y-6">
+                <!-- Logo in white box -->
+                <div class="bg-white p-3 rounded-xl inline-block">
+                    <img src="https://i.postimg.cc/ZnWYwYSJ/Clean-Nest-2-removebg-preview.png" alt="AAAPlus Cleaning Logo" class="h-12 w-auto">
+                </div>
+                
+                <!-- Contact Links -->
+                <div class="space-y-3">
+                    <a href="tel:+61405509438" class="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300">
+                        <svg class="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <span class="text-sm">+61 405 509 438</span>
+                    </a>
+                    <a href="mailto:richard@aaaplusclean.com.au" class="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300">
+                        <svg class="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span class="text-sm">richard@aaaplusclean.com.au</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hours Column -->
+            <div>
+    <h3 class="text-sm font-medium text-blue-400 mb-4">Business Hours</h3>
+    <ul class="space-y-2 text-sm">
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Monday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Tuesday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Wednesday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Thursday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Friday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Saturday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center">
+            <span class="text-gray-400">Sunday</span>
+            <span class="text-red-400">Closed</span>
+        </li>
+    </ul>
+</div>
+
+
+            <!-- Service Areas Column -->
+            <div>
+                <h3 class="text-sm font-medium text-blue-400 mb-4">Service Areas</h3>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Baulkham Hills</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Castle Hill</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Bella Vista</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Kellyville</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Winston Hills</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Norwest</a>
+                </div>
+            </div>
+
+            <!-- Map Column -->
+            <div>
+                <h3 class="text-sm font-medium text-blue-400 mb-4">Find Us</h3>
+                <div class="rounded-lg overflow-hidden bg-white/5">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26538.14556202483!2d150.97482901528326!3d-33.753734800000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa51a6d668ff4ca53%3A0x9505efc4b5ad1293!2sAAA%20Plus%20Cleaning!5e0!3m2!1sen!2sau!4v1733353833214!5m2!1sen!2sau"
+                        width="100%"
+                        height="150"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-lg filter grayscale hover:grayscale-0 transition-all duration-500">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-12 pt-6 border-t border-white/10">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-400">&copy; 2024 AAAPlus Cleaning Services. All rights reserved.</p>
+                
+                <div class="flex items-center gap-6">
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 10.838c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <a href="https://www.astradesigns.info/" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="text-xs text-gray-400 hover:text-white transition-colors duration-300">
+                        Designed by Astra Designs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>    <style>
+    [x-cloak] {
+        display: none !important;
+    }
+
+    .prose ul > li {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .animated-border {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .animated-border::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+        animation: borderSlide 3s infinite;
+    }
+
+    @keyframes borderSlide {
+        0% { left: -100%; }
+        50% { left: 100%; }
+        100% { left: 100%; }
+    }
+
+    .hover-lift {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+    </style>
+</body>
+</html>
