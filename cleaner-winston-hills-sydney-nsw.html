@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BJD1ZGHM4K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BJD1ZGHM4K');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialised Cleaning Sydney | Professional Cleaning Services | AAAPlus Cleaning</title>
+    <meta name="description" content="Expert specialised cleaning services in Sydney. End of lease cleaning, carpet steam cleaning, hard floor restoration, and more. Professional, reliable, and fully insured. Get a quote today!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .feature-hover {
+            background-color: white;
+            transition: all 0.3s ease-in-out;
+        }
+        .feature-hover:hover {
+            background-color: white;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px) scale(1.02);
+        }
+        .cta-button {
+            background: linear-gradient(to right, #4A90E2, #1C3D6E);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4A90E2',
+                        secondary: '#1C3D6E',
+                        accent: '#B0C5DB',
+                        light: '#F3F4F6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<header x-data="{ isOpen: false }" class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all duration-300">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <!-- Logo Section - Enhanced with hover effect -->
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="#" class="flex items-center transform transition-transform duration-300 hover:scale-105">
+                    <img class="h-16 w-auto sm:h-20" src="https://i.postimg.cc/ZnWYwYSJ/Clean-Nest-2-removebg-preview.png" alt="AAAPlus Cleaning Logo">
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button - Refined -->
+            <div class="-mr-2 -my-2 md:hidden">
+                <button @click="isOpen = !isOpen" 
+                        class="inline-flex items-center justify-center p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors duration-300 focus:outline-none">
+                    <span class="sr-only">Open menu</span>
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              x-show="!isOpen" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                              x-show="isOpen" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation - Enhanced -->
+            <nav class="hidden md:flex space-x-1">
+                <a href="#services" class="px-4 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-full hover:bg-primary/10 transition-all duration-300">Services</a>
+                <a href="#about" class="px-4 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-full hover:bg-primary/10 transition-all duration-300">About Us</a>
+                <a href="#process" class="px-4 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-full hover:bg-primary/10 transition-all duration-300">Our Process</a>
+                <a href="#testimonials" class="px-4 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-full hover:bg-primary/10 transition-all duration-300">Testimonials</a>
+            </nav>
+
+            <!-- CTA Button - Enhanced -->
+            <div class="hidden md:flex items-center justify-end">
+                <a href="#contact" 
+                   class="ml-8 px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-full shadow-lg hover:shadow-primary/50 transform hover:scale-105 transition-all duration-300 group">
+                    <span class="flex items-center">
+                        <span>Get a Free Quote</span>
+                        <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu - Refined -->
+    <div x-show="isOpen" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-4"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 translate-y-0"
+         x-transition:leave-end="opacity-0 -translate-y-4"
+         class="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl shadow-xl rounded-b-3xl overflow-hidden"
+         @click.away="isOpen = false">
+        <div class="p-6">
+            <nav class="grid gap-y-4">
+                <a href="#" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Home</span>
+                </a>
+                <a href="#services" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Services</span>
+                </a>
+                <a href="#about" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">About Us</span>
+                </a>
+                <a href="#process" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Our Process</span>
+                </a>
+                <a href="#testimonials" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Testimonials</span>
+                </a>
+                <a href="#contact" 
+                   class="flex items-center p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+                    <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Contact</span>
+                </a>
+            </nav>
+
+            <div class="mt-8 p-4">
+                <a href="#contact" 
+                   class="block w-full text-center px-6 py-4 bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-xl shadow-lg hover:shadow-primary/50 transform hover:scale-[1.02] transition-all duration-300">
+                    Get Your Free Quote
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Spacer for fixed header -->
+<div class="h-[88px]"></div>
+
+<style>
+/* Custom scroll behavior for mobile menu */
+.mobile-menu-scroll {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.mobile-menu-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header scroll effect */
+@media (min-width: 768px) {
+    .header-scroll {
+        transform: translateY(-100%);
+    }
+
+    .header-scroll.show {
+        transform: translateY(0);
+    }
+}
+</style>
+
+<script>
+// Header scroll behavior
+let lastScroll = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll <= 0) {
+        header.classList.remove('header-scroll');
+        return;
+    }
+    
+    if (currentScroll > lastScroll && !header.classList.contains('header-scroll')) {
+        // Scroll down
+        header.classList.add('header-scroll');
+    } else if (currentScroll < lastScroll && header.classList.contains('header-scroll')) {
+        // Scroll up
+        header.classList.remove('header-scroll');
+    }
+    
+    lastScroll = currentScroll;
+});
+</script>
+
+    <section class="relative hero-bg min-h-screen flex items-center">
+        <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-left max-w-3xl">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4 text-shadow">
+                    Cleaner in Winston Hills, Sydney, NSW<br> - AAAPlus Cleaning</span>
+                </h1>
+                <p class="mt-6 text-xl sm:text-2xl text-white max-w-3xl text-shadow">
+                    CALL NOW FOR FAST SERVICE!.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="cta-button rounded-full px-8 py-4 text-lg font-semibold text-white shadow-lg text-center bg-primary hover:bg-primary-dark transition duration-300">
+                        Get Your Free Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+ <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold mb-12 text-center">AAA Plus Cleaning Services: Winston Hills' Trusted Cleaning Contractor</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div class="prose max-w-none">
+                    <p class="mb-6">
+                        Nestled in the heart of Sydney's northwest, Winston Hills is a charming suburb known for its friendly community and leafy streets. As a key part of this area, <strong>AAA Plus Cleaning Services</strong> prides ourselves on being the go-to cleaning contractor for every household and business here. Our team of professional cleaners brings sparkle and freshness to Winston Hills, ensuring your living and working spaces are spotless, hygienic, and welcoming.
+                    </p>
+                    
+                    <p class="mb-6">
+                        Based in nearby  <strong>AAA Plus Cleaning Services</strong> extends its top-notch cleaning solutions to Winston Hills and surrounding areas. Whether you need residential cleaning for your home or commercial cleaning for your business, our commitment to quality and customer satisfaction shines through in every job we do.
+                    </p>
+
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-semibold mb-4">Our comprehensive range of services includes:</h2>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Regular house cleaning</li>
+                            <li>End of lease cleaning Winston Hills</li>
+                            <li>Office cleaning</li>
+                            <li>Carpet steam cleaning Winston Hills</li>
+                            <li>Window washing</li>
+                            <li>Specialised cleaning services</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-semibold mb-4">With AAA Plus Cleaning Services, Winston Hills residents and businesses can enjoy:</h2>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Experienced and vetted cleaning professionals</li>
+                            <li>Eco-friendly cleaning products</li>
+                            <li>Customised cleaning plans to suit your specific needs</li>
+                            <li>Competitive pricing and excellent value for money</li>
+                            <li>Reliable and punctual service</li>
+                        </ul>
+                    </div>
+
+                    <p class="mb-6">
+                        Join us as we freshen up Winston Hills, one property at a time. Experience the <strong>AAA Plus difference</strong> and discover why we're the preferred choice for cleaning services in Winston Hills and the wider Baulkham Hills area.
+                    </p>
+                </div>
+                
+                <div class="sticky top-8">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img 
+                            src="https://www.homely.com.au/img-resize/l-AgentBox-11614498-1.jpg?fit=cover&format=webp&height=500&quality=60&version=ZpqgXrbaiMNnPX9HqT4b62S2AWfOfZL9&width=750" 
+                            alt="Professional Cleaning Services" 
+                            class="w-full h-full object-cover"
+                        >
+                        <div class="absolute bottom-6 right-6 bg-white text-gray-900 px-6 py-4 rounded-xl shadow-lg">
+                            <p class="text-2xl font-bold">100%</p>
+                            <p class="text-sm">Satisfaction Guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+                <div class="prose max-w-none">
+                    <div class="space-y-12">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6">Residential Cleaning in Winston Hills, NSW</h2>
+                            <p class="text-lg text-gray-600">When it comes to your home, cleanliness and comfort are paramount. That's why our residential cleaners are dedicated to providing Winston Hills with the highest quality cleaning services. From regular house cleaning to end of lease cleaning Winston Hills, AAA Plus Cleaning Services ensures your home is spotless, hygienic, and tailored to your lifestyle. Our team of skilled cleaners is ready to refresh your home with expert care.</p>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6">Commercial Cleaning in Winston Hills, NSW</h2>
+                            <p class="text-lg text-gray-600">Our commercial cleaners understand that a pristine environment is crucial for your business's success. We specialise in comprehensive cleaning solutions for businesses, offering professional office cleaning, retail space cleaning, and maintenance services. Whether you're updating your facility or need immediate cleaning, our AAA Plus Cleaning Services team is equipped to keep your business looking its best.</p>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6">Carpet Steam Cleaning in Winston Hills, NSW</h2>
+                            <p class="text-lg text-gray-600">Revitalise your carpets with our professional carpet steam cleaning services. Our Winston Hills cleaners are experts in deep cleaning carpets, enhancing their appearance and extending their lifespan. From residential carpets to commercial carpeting, we're here to restore the freshness of your floor coverings.</p>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6">Window Cleaning in Winston Hills, NSW</h2>
+                            <p class="text-lg text-gray-600">Elevate your property's appearance with our professional window cleaning services. We specialise in cleaning windows for both homes and businesses, ensuring crystal-clear views and improved curb appeal. Let our Winston Hills cleaners transform your windows into sparkling features of your property.</p>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6">End of Lease Cleaning in Winston Hills, NSW</h2>
+                            <p class="text-lg text-gray-600">Ensure the return of your bond with our comprehensive end of lease cleaning Winston Hills services. Our certified cleaners meticulously clean every corner of your rental property, meeting all real estate agent requirements. Trust AAA Plus Cleaning Services to help you leave your rental spotless and stress-free.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-12">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Upholstery Cleaning in Winston Hills, NSW</h2>
+                        <p class="text-lg text-gray-600">Refresh your furniture with our upholstery cleaning services. As daily use takes its toll, professional cleaning is essential to maintain the appearance and longevity of your upholstered items. Our experienced Winston Hills cleaners ensure your sofas, chairs, and other upholstered pieces look and feel like new.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Tile and Grout Cleaning in Winston Hills, NSW</h2>
+                        <p class="text-lg text-gray-600">Restore the shine to your tiles and grout with AAA Plus Cleaning Services' tile and grout cleaning solutions. Our cleaning technicians use advanced techniques to deep clean and seal your tiles, ensuring they look pristine and are protected from future staining.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Oven and BBQ Cleaning in Winston Hills, NSW</h2>
+                        <p class="text-lg text-gray-600">Whether you're tackling a grimy oven or a well-used BBQ, our oven and BBQ cleaning services are essential. Our team of skilled Winston Hills cleaners ensures your cooking appliances are cleaned thoroughly and safely, providing a hygienic cooking environment for your home or business.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Mattress Cleaning in Winston Hills, NSW</h2>
+                        <p class="text-lg text-gray-600">Health first—our cleaners specialise in mattress cleaning and sanitising. These services are crucial for maintaining a hygienic sleeping environment and extending the life of your mattress. Let AAA Plus Cleaning Services help you achieve a cleaner, healthier night's sleep.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">High-Pressure Cleaning in Winston Hills, NSW</h2>
+                        <p class="text-lg text-gray-600">As outdoor areas accumulate dirt and grime, having a reliable high-pressure cleaning service is essential. Our Winston Hills cleaners specialise in high-pressure cleaning for driveways, patios, and exterior walls, providing you with spotless outdoor spaces. Trust AAA Plus Cleaning Services to rejuvenate your property's exterior with our expert services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-16">Our Services</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-blue-500 text-white text-center py-4 px-6 rounded-full font-semibold hover:bg-blue-600 transition-colors cursor-pointer shadow-lg">
+                RESIDENTIAL CLEANING
+            </div>
+            
+            <div class="bg-blue-500 text-white text-center py-4 px-6 rounded-full font-semibold hover:bg-blue-600 transition-colors cursor-pointer shadow-lg">
+                COMMERCIAL CLEANING
+            </div>
+            
+            <div class="bg-blue-500 text-white text-center py-4 px-6 rounded-full font-semibold hover:bg-blue-600 transition-colors cursor-pointer shadow-lg">
+                END OF LEASE CLEANING
+            </div>
+            
+            <div class="bg-blue-500 text-white text-center py-4 px-6 rounded-full font-semibold hover:bg-blue-600 transition-colors cursor-pointer shadow-lg">
+                CARPET STEAM CLEANING
+            </div>
+            
+            <div class="bg-blue-500 text-white text-center py-4 px-6 rounded-full font-semibold hover:bg-blue-600 transition-colors cursor-pointer shadow-lg">
+                WINDOW CLEANING
+            </div>
+            
+            <div class="bg-blue-500 text-white text-center py-4 px-6 rounded-full font-semibold hover:bg-blue-600 transition-colors cursor-pointer shadow-lg">
+                UPHOLSTERY CLEANING
+            </div>
+            
+            <div class="bg-blue-500 text-white text-center py-4 px-6 rounded-full font-semibold hover:bg-blue-600 transition-colors cursor-pointer shadow-lg">
+                TILE AND GROUT CLEANING
+            </div>
+            
+            <div class="bg-blue-500 text-white text-center py-4 px-6 rounded-full font-semibold hover:bg-blue-600 transition-colors cursor-pointer shadow-lg">
+                OVEN AND BBQ CLEANING
+            </div>
+            
+            <div class="bg-blue-500 text-white text-center py-4 px-6 rounded-full font-semibold hover:bg-blue-600 transition-colors cursor-pointer shadow-lg">
+                HIGH-PRESSURE CLEANING
+            </div>
+        </div>
+       <div class="mt-16 text-center px-4 md:px-16 lg:px-32">
+    <h3 class="text-3xl font-bold mb-6">Need Cleaning Help in Winston Hills,  NSW? Contact Us Today!</h3>
+    <p class="text-lg text-gray-600 mb-8">
+        At AAAPlus Cleaning Services, we understand the importance of having a clean and hygienic environment in your home or business. Our team of professional cleaners is dedicated to providing Winston Hills with top-notch cleaning services, from regular maintenance to deep cleaning. We offer flexible scheduling and efficient service to meet your needs, including end of lease cleaning and commercial cleaning to give you peace of mind.
+    </p>
+    <p class="text-lg text-gray-600 mb-8">
+        If you're looking for a dependable cleaning contractor in Winston Hills,  NSW, look no further. Contact us today at <a href="tel:+61405509438" class="text-blue-600 font-semibold hover:text-blue-800">+61 405 509 438</a> or visit our website for more information about our services. Let AAAPlus Cleaning Services be your first choice for all things cleaning, ensuring your space is spotless and hygienic.
+    </p>
+    <div class="mb-8">
+        <h4 class="text-xl font-semibold mb-4">Our services include:</h4>
+        <ul class="text-lg text-gray-600 space-y-2">
+            <li>- Residential cleaning</li>
+            <li>- Commercial cleaning</li>
+            <li>- Carpet steam cleaning</li>
+            <li>- End of lease cleaning</li>
+            <li>- Upholstery cleaning</li>
+            <li>- Window cleaning</li>
+            <li>- Tile and grout cleaning</li>
+        </ul>
+    </div>
+    <p class="text-lg text-gray-600">
+        With years of experience and a commitment to customer satisfaction, AAAPlus Cleaning Services is ready to tackle any cleaning challenge. Don't hesitate to reach out for a free quote or to schedule your cleaning service today.
+    </p>
+</div>
+    </div>
+</section>
+
+ 
+<style>
+.premium-parallax {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        45deg,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.7) 50%,
+        rgba(0,0,0,0.4) 100%
+    );
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.animated-border {
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+    animation: borderSlide 3s infinite;
+}
+
+@keyframes borderSlide {
+    0% { left: -100%; }
+    50% { left: 100%; }
+    100% { left: 100%; }
+}
+
+.hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+</style>
+
+    <section class="premium-parallax" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=2000&q=80');">
+        <div class="gradient-overlay"></div>
+        
+        <div class="content-wrapper min-h-screen flex items-center py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-6xl mx-auto glass-card p-16 rounded-[3rem] animated-border">
+                    <div class="text-center mb-16">
+                        <span class="inline-block text-primary font-light tracking-[0.2em] uppercase text-sm mb-4">Premium Specialised Cleaning</span>
+                        <h2 class="text-5xl md:text-6xl font-bold text-white font-playfair mb-8 leading-tight">
+                            Expert Solutions for<br/>Complex Cleaning Challenges
+                        </h2>
+                        <div class="w-24 h-1 bg-gradient-to-r from-primary via-white to-primary mx-auto mb-8"></div>
+                        <p class="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+                            Sydney's trusted specialists in premium cleaning services. Where expertise meets excellence.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="inline-flex flex-col items-center">
+                            <a href="tel:+61405509438" class="group mb-4 bg-gradient-to-r from-primary to-secondary p-[2px] rounded-full hover:opacity-90 transition-all duration-300 hover:scale-105 transform">
+                                <div class="px-12 py-5 bg-gradient-to-r from-primary to-secondary rounded-full">
+                                    <span class="text-2xl font-bold text-white flex items-center gap-3">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                        </svg>
+                                        (61) 405 509 438
+                                    </span>
+                                </div>
+                            </a>
+                            <span class="text-xl font-light tracking-wide text-white/90">GET YOUR FREE QUOTE TODAY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="py-16 bg-gradient-to-b from-white to-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+            <div class="lg:col-span-3">
+                <div class="prose prose-lg max-w-none">
+                    <h2 class="text-4xl font-bold mb-8 text-blue-800">Winston Hills, New South Wales: A Suburban Paradise</h2>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-xl space-y-8">
+                        <p class="text-gray-700 leading-relaxed">
+                            Located approximately 28 km west of Sydney's CBD, Winston Hills stands as a testament to community spirit and suburban tranquility. This welcoming neighborhood in the City of Parramatta local government area offers residents a perfect blend of peaceful living and urban convenience.
+                        </p>
+
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-blue-700">The Roots of Winston Hills: A Historical Perspective</h3>
+                            <p class="text-gray-700">
+                                Originally part of the Toongabbie area, traditionally inhabited by the Dharug peoples' Toongagal clan, Winston Hills was named after Britain's Prime Minister Winston Churchill. The area was initially known as Model Farms, serving as a demonstration site for crops and farming practices. During the 1950s, the region thrived with market gardening, citrus orchards, and timber milling before its official recognition as Winston Hills in 1972.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-blue-700">Education: Foundations for the Future</h3>
+                            <p class="mb-2 text-gray-700">Winston Hills offers excellent educational opportunities through:</p>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                <li>Winston Hills Public School (K-6)</li>
+                                <li>Model Farms High School</li>
+                                <li>Northmead Creative and Performing Arts High School</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-blue-700">The Lifestyle: A Blend of Comfort and Convenience</h3>
+                            <p class="text-gray-700">
+                                With an estimated population of 12,811, Winston Hills features predominantly low-density housing, with 91% being single-family dwellings. The suburb offers a mix of renovated 1960s and 1970s style homes alongside modern two-storey residences, attracting professionals, families, and retirees alike.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-blue-800">Discovering Winston Hills: Local Attractions</h2>
+                            
+                            <div class="space-y-6">
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-4 text-blue-700">Natural Spaces</h3>
+                                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                        <li>Lake Parramatta Reserve</li>
+                                        <li>Bicentennial Park</li>
+                                        <li>Hunts Creek Reserve</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-4 text-blue-700">Shopping and Dining</h3>
+                                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                        <li>Winston Hills Mall with over 70 shops</li>
+                                        <li>The Winston hotel - award-winning dining</li>
+                                        <li>Various local cafés and restaurants</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-4 text-blue-700">Recreation</h3>
+                                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                        <li>Winston Hills Park</li>
+                                        <li>Western Sydney Parklands</li>
+                                        <li>Nearby Wet'n'Wild Sydney</li>
+                                        <li>Multiple sporting facilities</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-2xl font-bold mb-4 text-blue-700">Community Life</h3>
+                                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                                        <li>Monthly community meetings</li>
+                                        <li>Active neighborhood groups</li>
+                                        <li>Close to Parramatta CBD</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-blue-700">Life in Winston Hills</h3>
+                            <p class="mb-4 text-gray-700">
+                                Residents describe Winston Hills as peaceful, safe, and well-maintained, with pristine homes and gardens. The community takes pride in its active involvement, holding regular meetings to address local matters and maintain the suburb's high standards.
+                            </p>
+                            <p class="text-gray-700">
+                                Whether you're raising a family, starting your career, or looking for a peaceful retirement, Winston Hills offers the perfect balance of suburban charm and urban accessibility.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <div class="sticky top-8 space-y-8">
+                    <div class="bg-white p-4 rounded-2xl shadow-xl">
+                        <img 
+                            src="https://www.sydneyhillsaustralia.com.au/imagesdb/wysiwyg/167bh(1).jpg"
+                            alt="Winston Hills Suburb" 
+                            class="w-full h-auto rounded-xl mb-6 object-cover"
+                        >
+                        <div class="space-y-6 p-4">
+                            <div class="bg-blue-50 p-6 rounded-xl">
+                                <h3 class="text-2xl font-bold mb-4 text-blue-800">Community Overview</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                        28km from Sydney CBD
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                        Population: 12,811
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                        91% single-family homes
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                        Multiple schools nearby
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                        Active community groups
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><footer class="relative bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900">
+    <!-- Top Border Line with Gradient -->
+    <div class="h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent"></div>
+    
+    <!-- Main Footer Content -->
+    <div class="container mx-auto px-4 py-12">
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 items-start">
+            <!-- Logo & Contact Column -->
+            <div class="space-y-6">
+                <!-- Logo in white box -->
+                <div class="bg-white p-3 rounded-xl inline-block">
+                    <img src="https://i.postimg.cc/ZnWYwYSJ/Clean-Nest-2-removebg-preview.png" alt="AAAPlus Cleaning Logo" class="h-12 w-auto">
+                </div>
+                
+                <!-- Contact Links -->
+                <div class="space-y-3">
+                    <a href="tel:+61405509438" class="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300">
+                        <svg class="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <span class="text-sm">+61 405 509 438</span>
+                    </a>
+                    <a href="mailto:richard@aaaplusclean.com.au" class="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300">
+                        <svg class="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span class="text-sm">richard@aaaplusclean.com.au</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hours Column -->
+            <div>
+    <h3 class="text-sm font-medium text-blue-400 mb-4">Business Hours</h3>
+    <ul class="space-y-2 text-sm">
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Monday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Tuesday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Wednesday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Thursday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Friday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center text-gray-300">
+            <span class="text-gray-400">Saturday</span>
+            <span>7 am–7 pm</span>
+        </li>
+        <li class="flex justify-between items-center">
+            <span class="text-gray-400">Sunday</span>
+            <span class="text-red-400">Closed</span>
+        </li>
+    </ul>
+</div>
+
+
+            <!-- Service Areas Column -->
+            <div>
+                <h3 class="text-sm font-medium text-blue-400 mb-4">Service Areas</h3>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Baulkham Hills</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Castle Hill</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Bella Vista</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Kellyville</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Winston Hills</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Norwest</a>
+                </div>
+            </div>
+
+            <!-- Map Column -->
+            <div>
+                <h3 class="text-sm font-medium text-blue-400 mb-4">Find Us</h3>
+                <div class="rounded-lg overflow-hidden bg-white/5">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26538.14556202483!2d150.97482901528326!3d-33.753734800000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa51a6d668ff4ca53%3A0x9505efc4b5ad1293!2sAAA%20Plus%20Cleaning!5e0!3m2!1sen!2sau!4v1733353833214!5m2!1sen!2sau"
+                        width="100%"
+                        height="150"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-lg filter grayscale hover:grayscale-0 transition-all duration-500">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-12 pt-6 border-t border-white/10">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-400">&copy; 2024 AAAPlus Cleaning Services. All rights reserved.</p>
+                
+                <div class="flex items-center gap-6">
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 10.838c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <span class="w-px h-3 bg-white/10"></span>
+                    <a href="https://www.astradesigns.info/" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="text-xs text-gray-400 hover:text-white transition-colors duration-300">
+                        Designed by Astra Designs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
