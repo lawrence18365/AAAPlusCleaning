@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Sitemap: https://aaapluscleaning.com.au/sitemap.xml
+
+# Block access to certain file types
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /CNAME
