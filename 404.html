@@ -1,0 +1,6 @@
+<script>
+  var host = "www.aaapluscleaning.com.au";
+  if (window.location.host != host && window.location.host != "localhost:4000") {
+    window.location.replace("https://" + host + window.location.pathname);
+  }
+</script>
