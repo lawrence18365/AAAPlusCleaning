@@ -18,7 +18,8 @@
     <meta name="author" content="AAAPlus Cleaning">
     
     <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline'">
+<!-- Change this line in the head -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
     <!-- SEO Meta Tags -->
@@ -214,7 +215,11 @@
         }
     </script>
 </head>
-<header x-data="navigation" class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-lg">
+<header x-data="{ 
+    isOpen: false, 
+    servicesOpen: false, 
+    areasOpen: false 
+}" class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-lg">
     <div class="container mx-auto">
         <div class="flex items-center justify-between h-20 px-6 lg:px-8">
             <!-- Logo -->
@@ -363,9 +368,10 @@
             <!-- Navigation Links -->
             <nav class="grid gap-y-4">
                 <!-- Cleaning Services Dropdown -->
-<div x-data="{ isOpen: false }" class="relative" x-cloak>
-                    <button @click="isOpen = !isOpen" 
-                            class="flex items-center justify-between w-full p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
+<!-- For mobile Cleaning Services dropdown -->
+<div x-data="{ isOpen: false }" x-cloak>
+    <button @click="isOpen = !isOpen" 
+            class="flex items-center justify-between w-full p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
                         <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Cleaning Services</span>
                         <svg class="w-5 h-5 text-gray-500 transition-transform duration-200" 
                              :class="{ 'rotate-180': isOpen }"
@@ -374,10 +380,8 @@
                         </svg>
                     </button>
                     <div x-show="isOpen" 
-                         x-transition:enter="transition ease-out duration-100"
-                         x-transition:enter-start="transform opacity-0 scale-95"
-                         x-transition:enter-end="transform opacity-100 scale-100"
-                         class="pl-6">
+         x-cloak
+         class="pl-6">
                         <a href="/house-cleaning.html" class="block p-4 text-gray-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors duration-300">Residential Cleaning</a>
                         <a href="/commercial-cleaning.html" class="block p-4 text-gray-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors duration-300">Commercial Cleaning</a>
                         <a href="/specialised-cleaning.html" class="block p-4 text-gray-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors duration-300">End of Lease Cleaning</a>
@@ -386,7 +390,7 @@
                 </div>
 
                 <!-- Areas We Serve Dropdown -->
-                <div x-data="{ isOpen: false }" class="relative">
+<div x-data="{ isOpen: false }" x-cloak>
                     <button @click="isOpen = !isOpen" 
                             class="flex items-center justify-between w-full p-4 rounded-xl hover:bg-primary/10 transition-colors duration-300 group">
                         <span class="text-lg font-medium text-gray-900 group-hover:text-primary">Areas We Serve</span>
@@ -463,15 +467,7 @@
   }
 </style>
 
-<script>
-  document.addEventListener('alpine:init', () => {
-    Alpine.data('navigation', () => ({
-      isOpen: false,
-      servicesOpen: false,
-      areasOpen: false
-    }))
-  })
-</script>
+
 <script>
 // Header scroll behavior
 let lastScroll = 0;
